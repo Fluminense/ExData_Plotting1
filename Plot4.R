@@ -17,7 +17,7 @@ datetime<-as.POSIXct(data$Datetime)
 # Constructing the 4 plots
 png(filename = "Plot4.png")
 par(mfcol = c(2,2))
-plot(datetime,data$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")
+plot(datetime,data$Global_active_power, type="l", ylab="Global Active Power", xlab="")
 plot(datetime,data$Sub_metering_1, 
      type = "l", ylab="Energy sub metering",xlab="", col="black")
 lines(datetime,data$Sub_metering_2, col="red")
